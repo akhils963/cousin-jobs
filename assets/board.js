@@ -87,11 +87,98 @@
       else {
         const j = data.jobs.find((x) => x.url === url);
         applied[url] = { title: j.title, company: j.company, date: todayIST() };
+        save(applied);
+        render();
+        celebrate(url);
+        return;
       }
       save(applied);
       render();
     }
   });
+
+  // Celebration when a job is marked applied: confetti, a toast and a little bounce.
+  const cheers = ["Nice one!", "Great going!", "One step closer!", "Keep it up!", "You've got this!"];
+  function celebrate(url) {
+    const card = [...document.querySelectorAll(".job")].find((el) => el.querySelector(`[data-url="${CSS.escape(url)}"]`));
+    const n = Object.keys(applied).length;
+    const stat = $("#s-applied").parentElement;
+    stat.classList.remove("pop");
+    void stat.offsetWidth;
+    stat.classList.add("pop");
+    if (card) {
+      card.classList.add("flash");
+      setTimeout(() => card.classList.remove("flash"), 900);
+    }
+    toast(`${cheers[n % cheers.length]} That's ${n} application${n === 1 ? "" : "s"} so far.`);
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const r = card ? card.getBoundingClientRect() : { left: innerWidth / 2, top: innerHeight / 2, width: 0, height: 0 };
+    confetti(r.left + r.width / 2, r.top + r.height / 2);
+    if (document.body.classList.contains("cars")) {
+      if (card) zoomCar(card);
+      if (window.boostCar) window.boostCar();
+    }
+  }
+
+  function toast(msg) {
+    let t = $("#toast");
+    if (!t) {
+      t = document.createElement("div");
+      t.id = "toast";
+      t.setAttribute("role", "status");
+      document.body.appendChild(t);
+    }
+    t.textContent = msg;
+    t.classList.remove("show");
+    void t.offsetWidth;
+    t.classList.add("show");
+  }
+
+  function zoomCar(card) {
+    const car = document.createElement("div");
+    car.className = "zoom-car";
+    car.innerHTML = '<svg viewBox="0 0 124 40"><defs><linearGradient id="zc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff6b5e"/><stop offset="1" stop-color="#c41c10"/></linearGradient></defs><path d="M4 30 V23 Q6 18 20 17 L38 16 Q48 6 62 5 H80 Q92 6 102 15 L112 17 Q120 19 120 25 V30 Z" fill="url(#zc)"/><path d="M44 16 Q51 9 62 8.5 H70 V16 Z M74 8.5 H80 Q89 9 96 15.5 H74 Z" fill="#cfe6ff"/><circle cx="28" cy="31" r="8" fill="#151515"/><circle cx="28" cy="31" r="3.5" fill="#bbb"/><circle cx="96" cy="31" r="8" fill="#151515"/><circle cx="96" cy="31" r="3.5" fill="#bbb"/><rect x="114" y="21" width="6" height="3" fill="#fff6c2"/></svg>';
+    card.appendChild(car);
+    setTimeout(() => car.remove(), 1300);
+  }
+
+  function confetti(x, y) {
+    const cv = document.createElement("canvas");
+    cv.className = "confetti";
+    cv.width = innerWidth;
+    cv.height = innerHeight;
+    document.body.appendChild(cv);
+    const ctx = cv.getContext("2d");
+    const colours = document.body.classList.contains("cars")
+      ? ["#ff4b3e", "#ffd23f", "#3b82f6", "#ffffff", "#22c55e"]
+      : ["#ff6f91", "#ff9671", "#ffc75f", "#6a4cff", "#00b39b"];
+    const bits = Array.from({ length: 140 }, () => {
+      const a = Math.random() * Math.PI * 2;
+      const v = 4 + Math.random() * 9;
+      return { x, y, vx: Math.cos(a) * v, vy: Math.sin(a) * v - 6, s: 5 + Math.random() * 6, r: Math.random() * 6, vr: (Math.random() - 0.5) * 0.4, c: colours[Math.floor(Math.random() * colours.length)] };
+    });
+    const start = performance.now();
+    (function tick(now) {
+      const t = now - start;
+      ctx.clearRect(0, 0, cv.width, cv.height);
+      for (const b of bits) {
+        b.vy += 0.35;
+        b.vx *= 0.99;
+        b.x += b.vx;
+        b.y += b.vy;
+        b.r += b.vr;
+        ctx.save();
+        ctx.globalAlpha = Math.max(0, 1 - t / 1800);
+        ctx.translate(b.x, b.y);
+        ctx.rotate(b.r);
+        ctx.fillStyle = b.c;
+        ctx.fillRect(-b.s / 2, -b.s / 4, b.s, b.s / 2);
+        ctx.restore();
+      }
+      if (t < 1800) requestAnimationFrame(tick);
+      else cv.remove();
+    })(start);
+  }
 
   $("#backup").addEventListener("click", () => {
     const blob = new Blob([JSON.stringify(applied, null, 1)], { type: "application/json" });

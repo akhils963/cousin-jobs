@@ -163,20 +163,6 @@ footer button { background: none; border: 0; color: var(--accent); font: inherit
   background: repeating-linear-gradient(90deg, #ffd23f 0 28px, transparent 28px 52px);
   opacity: 0.85;
 }
-.cars .racer {
-  position: absolute;
-  bottom: 18px;
-  width: 78px;
-  height: 26px;
-  animation: drive 9s linear infinite;
-}
-@keyframes drive {
-  from { left: -90px; }
-  to { left: 100%; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .cars .racer { animation: none; right: 20px; }
-}
 .cars .stat, .cars .job, .cars .log { backdrop-filter: blur(2px); }
 .cars .btn { background: #ff4b3e; border-color: #ff4b3e; color: #fff; }
 .cars .job.applied .btn { background: transparent; }
@@ -200,3 +186,47 @@ footer button { background: none; border: 0; color: var(--accent); font: inherit
 @media (prefers-color-scheme: dark) {
   .cars { --surface: rgba(31, 31, 29, 0.82); }
 }
+
+/* 3D road scene behind Arjun's page */
+#road3d { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: -1; display: block; }
+.has-3d { background-image: none; }
+.has-3d .road { background: rgba(20, 23, 28, 0.72); backdrop-filter: blur(6px); }
+.has-3d { --surface: rgba(255, 255, 255, 0.86); }
+@media (prefers-color-scheme: dark) {
+  .has-3d { --surface: rgba(24, 26, 30, 0.86); }
+}
+
+/* Apply celebration */
+.job { position: relative; overflow: hidden; }
+.job.flash { animation: flash 0.9s ease; }
+@keyframes flash {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.025); box-shadow: 0 0 0 3px var(--done); }
+  100% { transform: scale(1); }
+}
+.stat.pop b { animation: pop 0.6s ease; transform-origin: left center; }
+@keyframes pop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.6) rotate(-6deg); }
+  100% { transform: scale(1); }
+}
+#toast {
+  position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 140%);
+  background: var(--text); color: var(--bg); padding: 12px 18px; border-radius: 999px;
+  font-weight: 600; font-size: 14px; box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  z-index: 20; white-space: nowrap; max-width: calc(100vw - 32px); overflow: hidden; text-overflow: ellipsis;
+}
+#toast.show { animation: toast 2.8s ease forwards; }
+@keyframes toast {
+  0% { transform: translate(-50%, 140%); }
+  12%, 82% { transform: translate(-50%, 0); }
+  100% { transform: translate(-50%, 140%); }
+}
+.confetti { position: fixed; inset: 0; pointer-events: none; z-index: 30; }
+.zoom-car {
+  position: absolute; bottom: 4px; left: -120px; width: 96px; height: 31px; pointer-events: none;
+  animation: zoom 1.2s cubic-bezier(0.5, 0, 0.3, 1) forwards;
+  filter: drop-shadow(-14px 2px 0 rgba(255, 75, 62, 0.25)) drop-shadow(-28px 2px 0 rgba(255, 75, 62, 0.12));
+}
+.zoom-car svg { width: 100%; height: 100%; display: block; }
+@keyframes zoom { to { left: calc(100% + 120px); } }

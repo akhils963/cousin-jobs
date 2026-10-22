@@ -55,7 +55,7 @@
     });
     $("#list").innerHTML = shown.length ? shown.map((j) => {
       const a = applied[j.url];
-      return `<div class="job${a ? " applied" : ""}">
+      return `<div class="job${a ? " applied" : ""}" data-url="${esc(j.url)}">
         <div class="main">
           <a class="title" href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a>
           <div class="meta">${esc(j.company)} · ${esc(j.location)} · posted ${fmt(j.posted)}</div>
@@ -69,6 +69,8 @@
         <button class="btn" data-url="${esc(j.url)}">${a ? "Undo" : "Mark applied"}</button>
       </div>`;
     }).join("") : '<p class="empty">Nothing here yet.</p>';
+
+    renderStreak();
 
     const sorted = log.sort((x, y) => (x.date < y.date ? 1 : -1));
     $("#log").innerHTML = sorted.length
@@ -97,6 +99,41 @@
     }
   });
 
+  // Daily streak: consecutive days (IST) with at least one application.
+  const dayIST = (offset) => new Date(Date.now() + 5.5 * 3600e3 - offset * 864e5).toISOString().slice(0, 10);
+  function streakInfo() {
+    const dates = new Set(Object.values(applied).map((a) => a.date));
+    const doneToday = dates.has(dayIST(0));
+    let current = 0;
+    for (let k = doneToday ? 0 : 1; dates.has(dayIST(k)); k++) current++;
+    let best = 0;
+    let run = 0;
+    let prev = null;
+    for (const d of [...dates].sort()) {
+      const next = prev && new Date(new Date(prev + "T00:00:00Z").getTime() + 864e5).toISOString().slice(0, 10);
+      run = d === next ? run + 1 : 1;
+      best = Math.max(best, run);
+      prev = d;
+    }
+    return { dates, doneToday, current, best };
+  }
+
+  function renderStreak() {
+    const s = streakInfo();
+    $("#streak-n").textContent = s.current;
+    $("#streak").classList.toggle("lit", s.doneToday);
+    const days = Array.from({ length: 14 }, (_, i) => dayIST(13 - i));
+    const letters = days.map((d) => new Date(d + "T00:00:00Z").toLocaleDateString("en-IN", { weekday: "narrow", timeZone: "UTC" }));
+    const msg = s.doneToday
+      ? `You applied today. Come back tomorrow to make it ${s.current + 1} days in a row.`
+      : s.current
+        ? `Apply to 1 job today to keep your ${s.current}-day streak alive.`
+        : "Apply to 1 job today to start a streak.";
+    $("#streak-panel").innerHTML = `<p>${msg}</p>
+      <div class="days">${days.map((d, i) => `<span class="day${s.dates.has(d) ? " on" : ""}${i === 13 ? " today" : ""}" title="${fmt(d)}">${letters[i]}</span>`).join("")}</div>
+      <p class="best">Best streak: <b>${s.best}</b> day${s.best === 1 ? "" : "s"}</p>`;
+  }
+
   // Celebration when a job is marked applied: confetti, a toast and a little bounce.
   const cheers = ["Nice one!", "Great going!", "One step closer!", "Keep it up!", "You've got this!"];
   function celebrate(url) {
@@ -110,7 +147,17 @@
       card.classList.add("flash");
       setTimeout(() => card.classList.remove("flash"), 900);
     }
-    toast(`${cheers[n % cheers.length]} That's ${n} application${n === 1 ? "" : "s"} so far.`);
+    const today = Object.values(applied).filter((a) => a.date === dayIST(0)).length;
+    if (today === 1) {
+      const btn = $("#streak");
+      btn.classList.remove("burn");
+      void btn.offsetWidth;
+      btn.classList.add("burn");
+      const c = streakInfo().current;
+      toast(c > 1 ? `🔥 ${c}-day streak! See you tomorrow.` : "🔥 Streak started! Apply again tomorrow.");
+    } else {
+      toast(`${cheers[n % cheers.length]} That's ${n} application${n === 1 ? "" : "s"} so far.`);
+    }
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const r = card ? card.getBoundingClientRect() : { left: innerWidth / 2, top: innerHeight / 2, width: 0, height: 0 };
     confetti(r.left + r.width / 2, r.top + r.height / 2);
@@ -139,7 +186,7 @@
     const ctx = cv.getContext("2d");
     const colours = document.body.classList.contains("colorful")
       ? ["#ff6f91", "#ff9671", "#ffc75f", "#6a4cff", "#00b39b"]
-      : ["#2f5d50", "#8cc4b0", "#f0a27a", "#3b6b2f", "#e3b23c"];
+      : ["#ffffff", "#a3a3a3", "#ff8a3d", "#4ade80", "#60a5fa"];
     const bits = Array.from({ length: 140 }, () => {
       const a = Math.random() * Math.PI * 2;
       const v = 4 + Math.random() * 9;
@@ -166,6 +213,43 @@
       if (t < 1800) requestAnimationFrame(tick);
       else cv.remove();
     })(start);
+  }
+
+  $("#streak").addEventListener("click", () => {
+    const panel = $("#streak-panel");
+    panel.hidden = !panel.hidden;
+    $("#streak").setAttribute("aria-expanded", String(!panel.hidden));
+  });
+
+  // "Pick a job for me": flicks through the open jobs on screen, then lands on one.
+  const pick = $("#pick");
+  if (pick) {
+    pick.addEventListener("click", () => {
+      const cards = [...document.querySelectorAll(".job:not(.applied)")];
+      if (!cards.length) { toast("You've applied to everything here. Nice work!"); return; }
+      pick.disabled = true;
+      const quiet = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const hops = quiet ? 0 : Math.min(8, cards.length * 2);
+      let i = 0;
+      let last;
+      (function hop() {
+        if (last) last.classList.remove("hover-pick");
+        if (i < hops) {
+          last = cards[Math.floor(Math.random() * cards.length)];
+          last.classList.add("hover-pick");
+          i++;
+          setTimeout(hop, 70 + i * 25);
+          return;
+        }
+        const chosen = cards[Math.floor(Math.random() * cards.length)];
+        document.querySelectorAll(".picked").forEach((el) => el.classList.remove("picked"));
+        chosen.classList.add("picked");
+        chosen.scrollIntoView({ behavior: quiet ? "auto" : "smooth", block: "center" });
+        toast("Try this one today 👇");
+        setTimeout(() => chosen.classList.remove("picked"), 4000);
+        pick.disabled = false;
+      })();
+    });
   }
 
   $("#backup").addEventListener("click", () => {

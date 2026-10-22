@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Arjun's Job Board</title>
-<meta name="theme-color" content="#2f5d50">
+<meta name="theme-color" content="#000000">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Arjun Jobs">
 <link rel="manifest" href="manifest.webmanifest">
@@ -13,13 +13,18 @@
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="stylesheet" href="../assets/board.css">
 </head>
-<body data-person="arjun">
+<body data-person="arjun" class="black">
 <div class="wrap">
   <header>
     <h1>Arjun's job board</h1>
     <p>RTL design, verification, SoC integration and front-end design roles in Bengaluru, picked for freshers.</p>
     <p id="updated"></p>
   </header>
+  <div class="actions">
+    <button class="streak-btn" id="streak" aria-expanded="false" aria-controls="streak-panel">🔥 <b id="streak-n">0</b>-day streak</button>
+    <button class="pick-btn" id="pick">🎯 Pick a job for me</button>
+  </div>
+  <div class="streak-panel" id="streak-panel" hidden></div>
   <div class="stats">
     <div class="stat hi"><b id="s-applied">0</b><span>Applied total</span></div>
     <div class="stat"><b id="s-week">0</b><span>Applied this week</span></div>

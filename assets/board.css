@@ -138,3 +138,65 @@ footer button { background: none; border: 0; color: var(--accent); font: inherit
   .colorful .job.applied { background: #1d3326; }
   .colorful .tag { filter: saturate(1.1); }
 }
+
+/* Cars theme */
+.cars {
+  background-color: var(--bg);
+  background-image: url("cars.svg");
+  background-size: 360px 240px;
+}
+.cars .road {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(160deg, #2b2f36, #1b1e23);
+  color: #f3f4f6;
+  border-radius: 20px;
+  padding: 22px 20px 46px;
+  box-shadow: 0 10px 30px -14px rgba(0, 0, 0, 0.6);
+}
+.cars .road p { color: #c9ced6; }
+.cars .road::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 14px;
+  height: 4px;
+  background: repeating-linear-gradient(90deg, #ffd23f 0 28px, transparent 28px 52px);
+  opacity: 0.85;
+}
+.cars .racer {
+  position: absolute;
+  bottom: 18px;
+  width: 78px;
+  height: 26px;
+  animation: drive 9s linear infinite;
+}
+@keyframes drive {
+  from { left: -90px; }
+  to { left: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cars .racer { animation: none; right: 20px; }
+}
+.cars .stat, .cars .job, .cars .log { backdrop-filter: blur(2px); }
+.cars .btn { background: #ff4b3e; border-color: #ff4b3e; color: #fff; }
+.cars .job.applied .btn { background: transparent; }
+.cars .chip[aria-pressed="true"] { background: #2b2f36; border-color: #2b2f36; color: #fff; }
+@media (prefers-color-scheme: dark) {
+  .cars .chip[aria-pressed="true"] { background: #ff4b3e; border-color: #ff4b3e; }
+}
+
+/* Phones */
+@media (max-width: 560px) {
+  .wrap { padding: 16px 12px 48px; }
+  header h1 { font-size: 22px; }
+  .stat b { font-size: 22px; }
+  .bar { flex-wrap: nowrap; overflow-x: auto; margin-left: -12px; margin-right: -12px; padding: 0 12px 4px; scrollbar-width: none; }
+  .bar::-webkit-scrollbar { display: none; }
+  .chip { flex: none; padding: 8px 14px; }
+  .job .btn { width: 100%; padding: 10px; font-size: 14px; }
+  .log div { flex-direction: column; gap: 2px; }
+}
+.cars { --surface: rgba(255, 255, 255, 0.82); }
+@media (prefers-color-scheme: dark) {
+  .cars { --surface: rgba(31, 31, 29, 0.82); }
+}

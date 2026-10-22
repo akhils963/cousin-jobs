@@ -139,38 +139,6 @@ footer button { background: none; border: 0; color: var(--accent); font: inherit
   .colorful .tag { filter: saturate(1.1); }
 }
 
-/* Cars theme */
-.cars {
-  background-color: var(--bg);
-  background-image: url("cars.svg");
-  background-size: 360px 240px;
-}
-.cars .road {
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(160deg, #2b2f36, #1b1e23);
-  color: #f3f4f6;
-  border-radius: 20px;
-  padding: 22px 20px 46px;
-  box-shadow: 0 10px 30px -14px rgba(0, 0, 0, 0.6);
-}
-.cars .road p { color: #c9ced6; }
-.cars .road::after {
-  content: "";
-  position: absolute;
-  left: 0; right: 0; bottom: 14px;
-  height: 4px;
-  background: repeating-linear-gradient(90deg, #ffd23f 0 28px, transparent 28px 52px);
-  opacity: 0.85;
-}
-.cars .stat, .cars .job, .cars .log { backdrop-filter: blur(2px); }
-.cars .btn { background: #ff4b3e; border-color: #ff4b3e; color: #fff; }
-.cars .job.applied .btn { background: transparent; }
-.cars .chip[aria-pressed="true"] { background: #2b2f36; border-color: #2b2f36; color: #fff; }
-@media (prefers-color-scheme: dark) {
-  .cars .chip[aria-pressed="true"] { background: #ff4b3e; border-color: #ff4b3e; }
-}
-
 /* Phones */
 @media (max-width: 560px) {
   .wrap { padding: 16px 12px 48px; }
@@ -181,19 +149,6 @@ footer button { background: none; border: 0; color: var(--accent); font: inherit
   .chip { flex: none; padding: 8px 14px; }
   .job .btn { width: 100%; padding: 10px; font-size: 14px; }
   .log div { flex-direction: column; gap: 2px; }
-}
-.cars { --surface: rgba(255, 255, 255, 0.82); }
-@media (prefers-color-scheme: dark) {
-  .cars { --surface: rgba(31, 31, 29, 0.82); }
-}
-
-/* 3D road scene behind Arjun's page */
-#road3d { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: -1; display: block; }
-.has-3d { background-image: none; }
-.has-3d .road { background: rgba(20, 23, 28, 0.72); backdrop-filter: blur(6px); }
-.has-3d { --surface: rgba(255, 255, 255, 0.86); }
-@media (prefers-color-scheme: dark) {
-  .has-3d { --surface: rgba(24, 26, 30, 0.86); }
 }
 
 /* Apply celebration */
@@ -223,10 +178,3 @@ footer button { background: none; border: 0; color: var(--accent); font: inherit
   100% { transform: translate(-50%, 140%); }
 }
 .confetti { position: fixed; inset: 0; pointer-events: none; z-index: 30; }
-.zoom-car {
-  position: absolute; bottom: 4px; left: -120px; width: 96px; height: 31px; pointer-events: none;
-  animation: zoom 1.2s cubic-bezier(0.5, 0, 0.3, 1) forwards;
-  filter: drop-shadow(-14px 2px 0 rgba(255, 75, 62, 0.25)) drop-shadow(-28px 2px 0 rgba(255, 75, 62, 0.12));
-}
-.zoom-car svg { width: 100%; height: 100%; display: block; }
-@keyframes zoom { to { left: calc(100% + 120px); } }

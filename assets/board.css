@@ -78,3 +78,63 @@ footer button { background: none; border: 0; color: var(--accent); font: inherit
   .stats { grid-template-columns: repeat(2, 1fr); }
   .job { flex-direction: column; }
 }
+.bar:empty { display: none; }
+
+/* Colourful theme */
+.colorful {
+  --bg: #fff8f3;
+  --line: #f1e2d6;
+  --accent: #c2185b;
+  --accent-soft: #fde4ee;
+  background:
+    radial-gradient(circle at 0% 0%, #ffe3ec 0, transparent 40%),
+    radial-gradient(circle at 100% 10%, #e3f0ff 0, transparent 40%),
+    var(--bg);
+}
+.colorful .hero {
+  background: linear-gradient(120deg, #ff6f91, #ff9671 45%, #ffc75f);
+  color: #2a0f1a;
+  border-radius: 20px;
+  padding: 22px 20px;
+  box-shadow: 0 10px 30px -12px rgba(255, 111, 145, 0.6);
+}
+.colorful .hero p { color: #4a1f2c; }
+.colorful .stat { border: 0; color: #1d1c1a; }
+.colorful .stat span { color: rgba(0, 0, 0, 0.6); }
+.colorful .stat:nth-child(1) { background: #d7f5e3; }
+.colorful .stat:nth-child(1) b { color: #12784a; }
+.colorful .stat:nth-child(2) { background: #dcecff; }
+.colorful .stat:nth-child(2) b { color: #1f5fbf; }
+.colorful .stat:nth-child(3) { background: #ffe1d2; }
+.colorful .stat:nth-child(3) b { color: #c8481b; }
+.colorful .stat:nth-child(4) { background: #efe1ff; }
+.colorful .stat:nth-child(4) b { color: #7b3fc4; }
+.colorful .chip.city[aria-pressed="true"] { background: #6a4cff; border-color: #6a4cff; color: #fff; }
+.colorful .job { border-left: 5px solid #ff9671; box-shadow: 0 2px 10px -6px rgba(194, 24, 91, 0.35); }
+.colorful .job:nth-child(4n+2) { border-left-color: #6a4cff; }
+.colorful .job:nth-child(4n+3) { border-left-color: #00b39b; }
+.colorful .job:nth-child(4n+4) { border-left-color: #ffc75f; }
+.colorful .job.applied { background: #e8f8ee; border-left-color: #12784a; }
+.colorful .tag[data-cat="Accounting"] { background: #e3f0ff; color: #1f5fbf; }
+.colorful .tag[data-cat="Tax"] { background: #fff1cc; color: #8a5a00; }
+.colorful .tag[data-cat="Payroll"] { background: #efe1ff; color: #7b3fc4; }
+.colorful .tag[data-cat="AP / AR"] { background: #d8f6f0; color: #00796b; }
+.colorful .tag.place { background: #ffe4ec; color: #c2185b; }
+.colorful .btn { background: #c2185b; border-color: #c2185b; color: #fff; }
+.colorful .job.applied .btn { background: transparent; }
+.colorful h2 { color: #c2185b; }
+@media (prefers-color-scheme: dark) {
+  .colorful {
+    --bg: #1a1218;
+    --surface: #251a22;
+    --line: #3a2a35;
+    --accent: #ff8fb4;
+    --accent-soft: #3d2030;
+    background:
+      radial-gradient(circle at 0% 0%, #3a1a2a 0, transparent 40%),
+      radial-gradient(circle at 100% 10%, #182a40 0, transparent 40%),
+      var(--bg);
+  }
+  .colorful .job.applied { background: #1d3326; }
+  .colorful .tag { filter: saturate(1.1); }
+}

@@ -1,12 +1,61 @@
 {
- "updated": "2026-10-22T12:00:00+05:30",
+ "updated": "2026-10-22T21:36+05:30",
  "categories": [
   "Accounting",
   "Tax",
   "Payroll",
   "AP / AR"
  ],
+ "cities": [
+  "Bengaluru",
+  "Kochi",
+  "Hyderabad"
+ ],
  "jobs": [
+  {
+   "title": "Executive - Finance/Accounts",
+   "company": "NeST Digital",
+   "location": "Kochi",
+   "posted": "2026-10-22",
+   "url": "https://to.indeed.com/aaggwdryccbl",
+   "category": "Accounting",
+   "city": "Kochi",
+   "added": "2026-10-22",
+   "source": "Indeed"
+  },
+  {
+   "title": "Junior Accountant",
+   "company": "Crayons Group of Schools",
+   "location": "Nizampet, Hyderabad",
+   "posted": "2026-10-22",
+   "url": "https://to.indeed.com/aazqbjlzy2ms",
+   "category": "Accounting",
+   "city": "Hyderabad",
+   "added": "2026-10-22",
+   "source": "Indeed"
+  },
+  {
+   "title": "Tax Executive",
+   "company": "Keka HR Payroll Software",
+   "location": "Hyderabad",
+   "posted": "2026-10-22",
+   "url": "https://to.indeed.com/aam99m4jswzt",
+   "category": "Tax",
+   "city": "Hyderabad",
+   "added": "2026-10-22",
+   "source": "Indeed"
+  },
+  {
+   "title": "Accountant",
+   "company": "Fitvera Activewear Pvt Ltd",
+   "location": "Hyderabad",
+   "posted": "2026-10-21",
+   "url": "https://to.indeed.com/aawq2p8vh4m9",
+   "category": "Accounting",
+   "city": "Hyderabad",
+   "added": "2026-10-22",
+   "source": "Indeed"
+  },
   {
    "title": "Cash Applications Analyst",
    "company": "LSEG",
@@ -14,6 +63,40 @@
    "posted": "2026-10-19",
    "url": "https://to.indeed.com/aalg9t778nz8",
    "category": "AP / AR",
+   "added": "2026-10-22",
+   "source": "Indeed",
+   "city": "Bengaluru"
+  },
+  {
+   "title": "Junior Accountant",
+   "company": "Simbizz Services Pvt Ltd",
+   "location": "Kaloor, Kochi",
+   "posted": "2026-10-18",
+   "url": "https://to.indeed.com/aaskvhsnpwm7",
+   "category": "Accounting",
+   "city": "Kochi",
+   "added": "2026-10-22",
+   "source": "Indeed"
+  },
+  {
+   "title": "Accounts Executive - Finance & Accounts",
+   "company": "Earthful",
+   "location": "Hyderabad",
+   "posted": "2026-10-18",
+   "url": "https://to.indeed.com/aac8bxzvsrvv",
+   "category": "Accounting",
+   "city": "Hyderabad",
+   "added": "2026-10-22",
+   "source": "Indeed"
+  },
+  {
+   "title": "Account Executive",
+   "company": "Ebenezer Hatcheries Pvt Ltd",
+   "location": "Nedumbassery, Kochi",
+   "posted": "2026-10-16",
+   "url": "https://to.indeed.com/aavvdg9gx784",
+   "category": "Accounting",
+   "city": "Kochi",
    "added": "2026-10-22",
    "source": "Indeed"
   },
@@ -25,6 +108,95 @@
    "url": "https://to.indeed.com/aalrtvnrkdkv",
    "category": "Accounting",
    "added": "2026-10-22",
+   "source": "Indeed",
+   "city": "Bengaluru"
+  },
+  {
+   "title": "Procure to Pay Operations Associate",
+   "company": "Accenture",
+   "location": "Hyderabad",
+   "posted": "2026-10-15",
+   "url": "https://to.indeed.com/aanrg4bvndjm",
+   "category": "AP / AR",
+   "city": "Hyderabad",
+   "added": "2026-10-22",
+   "source": "Indeed"
+  },
+  {
+   "title": "Accounts Executive",
+   "company": "AVW Global Logistics",
+   "location": "Kochi",
+   "posted": "2026-10-14",
+   "url": "https://to.indeed.com/aa68rqngbdxf",
+   "category": "Accounting",
+   "city": "Kochi",
+   "added": "2026-10-22",
+   "source": "Indeed"
+  },
+  {
+   "title": "Junior Accountant (Fresher)",
+   "company": "Green Leaf Accounting Solutions",
+   "location": "Kochi",
+   "posted": "2026-10-13",
+   "url": "https://to.indeed.com/aars26dnlj6f",
+   "category": "Accounting",
+   "city": "Kochi",
+   "added": "2026-10-22",
+   "source": "Indeed"
+  },
+  {
+   "title": "Junior Accountant",
+   "company": "TINNIT Pro India Pvt Ltd",
+   "location": "Hyderabad",
+   "posted": "2026-10-13",
+   "url": "https://to.indeed.com/aaflpxczxyl6",
+   "category": "Accounting",
+   "city": "Hyderabad",
+   "added": "2026-10-22",
+   "source": "Indeed"
+  },
+  {
+   "title": "Tax Associate",
+   "company": "V Tax Filing",
+   "location": "Hyderabad",
+   "posted": "2026-10-13",
+   "url": "https://to.indeed.com/aay2kg4dmht4",
+   "category": "Tax",
+   "city": "Hyderabad",
+   "added": "2026-10-22",
+   "source": "Indeed"
+  },
+  {
+   "title": "Finance & Accounts Executive",
+   "company": "Travelvava Pvt Ltd",
+   "location": "Palarivattom, Kochi",
+   "posted": "2026-10-12",
+   "url": "https://to.indeed.com/aasl6xc9gcwg",
+   "category": "Accounting",
+   "city": "Kochi",
+   "added": "2026-10-22",
+   "source": "Indeed"
+  },
+  {
+   "title": "Accounting Intern",
+   "company": "Praveen Lakshmi & Co, Chartered Accountants",
+   "location": "Hyderabad",
+   "posted": "2026-10-12",
+   "url": "https://to.indeed.com/aabd87clqm9k",
+   "category": "Accounting",
+   "city": "Hyderabad",
+   "added": "2026-10-22",
+   "source": "Indeed"
+  },
+  {
+   "title": "Accountant Intern",
+   "company": "Wexo Ventures Pvt Ltd",
+   "location": "Kochi",
+   "posted": "2026-10-10",
+   "url": "https://to.indeed.com/aay7d6djytnp",
+   "category": "Accounting",
+   "city": "Kochi",
+   "added": "2026-10-22",
    "source": "Indeed"
   },
   {
@@ -35,7 +207,8 @@
    "url": "https://to.indeed.com/aa79hx8txggj",
    "category": "Accounting",
    "added": "2026-10-22",
-   "source": "Indeed"
+   "source": "Indeed",
+   "city": "Bengaluru"
   },
   {
    "title": "Accountant",
@@ -45,7 +218,8 @@
    "url": "https://to.indeed.com/aavhx7bmrggd",
    "category": "Accounting",
    "added": "2026-10-22",
-   "source": "Indeed"
+   "source": "Indeed",
+   "city": "Bengaluru"
   },
   {
    "title": "Accounting and Finance - Fresher",
@@ -55,7 +229,8 @@
    "url": "https://to.indeed.com/aat8bnn6nngd",
    "category": "Accounting",
    "added": "2026-10-22",
-   "source": "Indeed"
+   "source": "Indeed",
+   "city": "Bengaluru"
   },
   {
    "title": "Accounts Receivables Executive",
@@ -64,6 +239,29 @@
    "posted": "2026-10-07",
    "url": "https://to.indeed.com/aat867k9n8vq",
    "category": "AP / AR",
+   "added": "2026-10-22",
+   "source": "Indeed",
+   "city": "Bengaluru"
+  },
+  {
+   "title": "Executive Accounts",
+   "company": "Giridhar Eye Institute",
+   "location": "Kadavanthara, Kochi",
+   "posted": "2026-10-07",
+   "url": "https://to.indeed.com/aazswhdqjd4p",
+   "category": "Accounting",
+   "city": "Kochi",
+   "added": "2026-10-22",
+   "source": "Indeed"
+  },
+  {
+   "title": "US Tax Associate / Analyst (Fresher)",
+   "company": "Nexen Consulting",
+   "location": "KPHB Colony, Hyderabad",
+   "posted": "2026-10-07",
+   "url": "https://to.indeed.com/aadtbqzhh8gb",
+   "category": "Tax",
+   "city": "Hyderabad",
    "added": "2026-10-22",
    "source": "Indeed"
   },
@@ -75,6 +273,18 @@
    "url": "https://to.indeed.com/aaxd9lzlg7hl",
    "category": "Accounting",
    "added": "2026-10-22",
+   "source": "Indeed",
+   "city": "Bengaluru"
+  },
+  {
+   "title": "Tax Associate",
+   "company": "Maple Tax Consulting",
+   "location": "Hyderabad",
+   "posted": "2026-10-06",
+   "url": "https://to.indeed.com/aa8dl6m7y7tq",
+   "category": "Tax",
+   "city": "Hyderabad",
+   "added": "2026-10-22",
    "source": "Indeed"
   },
   {
@@ -84,6 +294,51 @@
    "posted": "2026-10-05",
    "url": "https://to.indeed.com/aa7tdcfnwyw6",
    "category": "AP / AR",
+   "added": "2026-10-22",
+   "source": "Indeed",
+   "city": "Bengaluru"
+  },
+  {
+   "title": "Tax Associate",
+   "company": "Ryan, LLC",
+   "location": "Madhapur, Hyderabad",
+   "posted": "2026-10-05",
+   "url": "https://to.indeed.com/aa6622vrdy7j",
+   "category": "Tax",
+   "city": "Hyderabad",
+   "added": "2026-10-22",
+   "source": "Indeed"
+  },
+  {
+   "title": "Tax Associate",
+   "company": "Tax Pros Filer",
+   "location": "Hyderabad",
+   "posted": "2026-10-05",
+   "url": "https://to.indeed.com/aawg2mxgk4m9",
+   "category": "Tax",
+   "city": "Hyderabad",
+   "added": "2026-10-22",
+   "source": "Indeed"
+  },
+  {
+   "title": "Accounts Receivable Executive",
+   "company": "Marriott International",
+   "location": "Hyderabad",
+   "posted": "2026-10-05",
+   "url": "https://to.indeed.com/aanfz4lystrq",
+   "category": "AP / AR",
+   "city": "Hyderabad",
+   "added": "2026-10-22",
+   "source": "Indeed"
+  },
+  {
+   "title": "Associate - F&A - Accounts Payable",
+   "company": "Genpact",
+   "location": "Hyderabad",
+   "posted": "2026-10-05",
+   "url": "https://to.indeed.com/aam226gfjqyf",
+   "category": "AP / AR",
+   "city": "Hyderabad",
    "added": "2026-10-22",
    "source": "Indeed"
   },
@@ -95,6 +350,29 @@
    "url": "https://to.indeed.com/aanjfqylls8r",
    "category": "Accounting",
    "added": "2026-10-22",
+   "source": "Indeed",
+   "city": "Bengaluru"
+  },
+  {
+   "title": "Accounts Executive",
+   "company": "SB Interior Solutions",
+   "location": "Miyapur, Hyderabad",
+   "posted": "2026-09-30",
+   "url": "https://to.indeed.com/aazcttsr69vh",
+   "category": "Accounting",
+   "city": "Hyderabad",
+   "added": "2026-10-22",
+   "source": "Indeed"
+  },
+  {
+   "title": "Tax Associate",
+   "company": "Dollartaxfiler",
+   "location": "Ameerpet, Hyderabad",
+   "posted": "2026-09-30",
+   "url": "https://to.indeed.com/aa4dkcb2lhyw",
+   "category": "Tax",
+   "city": "Hyderabad",
+   "added": "2026-10-22",
    "source": "Indeed"
   },
   {
@@ -105,7 +383,8 @@
    "url": "https://to.indeed.com/aa7sm8nsrx8z",
    "category": "Accounting",
    "added": "2026-10-22",
-   "source": "Indeed"
+   "source": "Indeed",
+   "city": "Bengaluru"
   },
   {
    "title": "Accountant",
@@ -114,6 +393,18 @@
    "posted": "2026-09-26",
    "url": "https://to.indeed.com/aaqmlwsnwcbs",
    "category": "Accounting",
+   "added": "2026-10-22",
+   "source": "Indeed",
+   "city": "Bengaluru"
+  },
+  {
+   "title": "Jr. Accounts Executive",
+   "company": "EventTitans",
+   "location": "Hyderabad",
+   "posted": "2026-09-26",
+   "url": "https://to.indeed.com/aazcmrjvrqdm",
+   "category": "Accounting",
+   "city": "Hyderabad",
    "added": "2026-10-22",
    "source": "Indeed"
   },
@@ -125,6 +416,18 @@
    "url": "https://to.indeed.com/aar8bfvf29yv",
    "category": "Accounting",
    "added": "2026-10-22",
+   "source": "Indeed",
+   "city": "Bengaluru"
+  },
+  {
+   "title": "Accountant Fresher",
+   "company": "Mindful Rejuvenation Hospital",
+   "location": "Perumbavoor, Kochi",
+   "posted": "2026-09-23",
+   "url": "https://to.indeed.com/aagvsrrlvtc2",
+   "category": "Accounting",
+   "city": "Kochi",
+   "added": "2026-10-22",
    "source": "Indeed"
   },
   {
@@ -134,6 +437,40 @@
    "posted": "2026-09-17",
    "url": "https://to.indeed.com/aarjc872yy4b",
    "category": "Tax",
+   "added": "2026-10-22",
+   "source": "Indeed",
+   "city": "Bengaluru"
+  },
+  {
+   "title": "Accounts Trainee (Freshers Preferred)",
+   "company": "DCS",
+   "location": "Kochi",
+   "posted": "2026-09-13",
+   "url": "https://to.indeed.com/aa2gkzphvsfd",
+   "category": "Accounting",
+   "city": "Kochi",
+   "added": "2026-10-22",
+   "source": "Indeed"
+  },
+  {
+   "title": "Executive - Central Reconciliation",
+   "company": "CSB Bank",
+   "location": "Kochi",
+   "posted": "2026-09-09",
+   "url": "https://to.indeed.com/aafmgw4rsvsm",
+   "category": "AP / AR",
+   "city": "Kochi",
+   "added": "2026-10-22",
+   "source": "Indeed"
+  },
+  {
+   "title": "HR Payroll Executive",
+   "company": "Neerus Ensembles Pvt Ltd",
+   "location": "Jubilee Hills, Hyderabad",
+   "posted": "2026-09-04",
+   "url": "https://to.indeed.com/aawx7vffzxtw",
+   "category": "Payroll",
+   "city": "Hyderabad",
    "added": "2026-10-22",
    "source": "Indeed"
   },
@@ -145,6 +482,29 @@
    "url": "https://to.indeed.com/aa2vmq64vgnx",
    "category": "Accounting",
    "added": "2026-10-22",
+   "source": "Indeed",
+   "city": "Bengaluru"
+  },
+  {
+   "title": "Process Associate II, PTP",
+   "company": "Invesco",
+   "location": "Hyderabad",
+   "posted": "2026-08-20",
+   "url": "https://to.indeed.com/aayfqsjd8bpv",
+   "category": "AP / AR",
+   "city": "Hyderabad",
+   "added": "2026-10-22",
+   "source": "Indeed"
+  },
+  {
+   "title": "Junior Accountant",
+   "company": "Asthra Projects",
+   "location": "Hyderabad",
+   "posted": "2026-08-11",
+   "url": "https://to.indeed.com/aahf9lhvmcyr",
+   "category": "Accounting",
+   "city": "Hyderabad",
+   "added": "2026-10-22",
    "source": "Indeed"
   },
   {
@@ -155,7 +515,8 @@
    "url": "https://to.indeed.com/aabgvzvn7jvg",
    "category": "Accounting",
    "added": "2026-10-22",
-   "source": "Indeed"
+   "source": "Indeed",
+   "city": "Bengaluru"
   },
   {
    "title": "Procure to Pay Operations Associate",
@@ -164,6 +525,18 @@
    "posted": "2026-08-03",
    "url": "https://to.indeed.com/aa7r6ngw7nfz",
    "category": "AP / AR",
+   "added": "2026-10-22",
+   "source": "Indeed",
+   "city": "Bengaluru"
+  },
+  {
+   "title": "Accounts Executive - Finance & Accounts",
+   "company": "Marri Retail Pvt Ltd",
+   "location": "Gachibowli, Hyderabad",
+   "posted": "2026-07-29",
+   "url": "https://to.indeed.com/aa6f8qnjq2db",
+   "category": "Accounting",
+   "city": "Hyderabad",
    "added": "2026-10-22",
    "source": "Indeed"
   },
@@ -175,7 +548,8 @@
    "url": "https://to.indeed.com/aan7h464z8g7",
    "category": "Payroll",
    "added": "2026-10-22",
-   "source": "Indeed"
+   "source": "Indeed",
+   "city": "Bengaluru"
   },
   {
    "title": "Associate (Accounts Payable)",
@@ -184,6 +558,18 @@
    "posted": "2026-07-24",
    "url": "https://to.indeed.com/aayxsjsmhkz7",
    "category": "AP / AR",
+   "added": "2026-10-22",
+   "source": "Indeed",
+   "city": "Bengaluru"
+  },
+  {
+   "title": "Jr. Accountant",
+   "company": "Aspent Technology Solutions",
+   "location": "Hyderabad",
+   "posted": "2026-07-16",
+   "url": "https://to.indeed.com/aa7cvvrjgk8g",
+   "category": "Accounting",
+   "city": "Hyderabad",
    "added": "2026-10-22",
    "source": "Indeed"
   },
@@ -195,6 +581,18 @@
    "url": "https://to.indeed.com/aaj842br7r76",
    "category": "Accounting",
    "added": "2026-10-22",
+   "source": "Indeed",
+   "city": "Bengaluru"
+  },
+  {
+   "title": "Accountant",
+   "company": "Mariagroup",
+   "location": "Kochi",
+   "posted": "2026-07-01",
+   "url": "https://to.indeed.com/aa9hl9cshcgb",
+   "category": "Accounting",
+   "city": "Kochi",
+   "added": "2026-10-22",
    "source": "Indeed"
   },
   {
@@ -205,7 +603,8 @@
    "url": "https://to.indeed.com/aaw2kf9ttx76",
    "category": "Accounting",
    "added": "2026-10-22",
-   "source": "Indeed"
+   "source": "Indeed",
+   "city": "Bengaluru"
   },
   {
    "title": "Accounts Executive",
@@ -215,7 +614,8 @@
    "url": "https://to.indeed.com/aawckkmb79pd",
    "category": "Accounting",
    "added": "2026-10-22",
-   "source": "Indeed"
+   "source": "Indeed",
+   "city": "Bengaluru"
   },
   {
    "title": "Assistant Manager - Business Finance (Fresher)",
@@ -225,7 +625,8 @@
    "url": "https://to.indeed.com/aawwqf88flwm",
    "category": "Accounting",
    "added": "2026-10-22",
-   "source": "Indeed"
+   "source": "Indeed",
+   "city": "Bengaluru"
   }
  ]
 }

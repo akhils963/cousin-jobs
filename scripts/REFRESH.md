@@ -1,15 +1,20 @@
 # Daily refresh
 
-Runs every day before 12 PM IST. Both people live in Bengaluru and are freshers, so search
-Bengaluru (country IN) and skip senior roles (merge.py also filters them).
+Runs every day before 12 PM IST. Both people are freshers, so skip senior roles (merge.py also
+filters them). Search country IN in the cities listed for each person.
 
 ## Anusha (categories: Accounting, Tax, Payroll, AP / AR)
+
+Cities: Bengaluru, Kochi and Hyderabad (run every search in all three). Keep the city name in
+each job's location, e.g. "Kaloor, Kochi", so merge.py can tag it; jobs elsewhere are dropped.
 
 Searches: "accountant fresher", "junior accountant", "accounts executive", "tax associate",
 "GST tax executive", "payroll executive", "payroll associate", "accounts payable associate",
 "accounts receivable executive", "record to report associate".
 
 ## Arjun (categories: RTL Design, Design Verification, Functional Verification, SoC Integration, Front-End Design)
+
+City: Bengaluru.
 
 Searches: "design verification engineer", "verification engineer SystemVerilog UVM",
 "functional verification engineer", "RTL design engineer", "SoC integration engineer",

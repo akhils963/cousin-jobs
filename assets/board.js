@@ -5,6 +5,7 @@
   const $ = (s) => document.querySelector(s);
   let data = { jobs: [], categories: [] };
   let filter = "all";
+  let city = "all";
 
   const todayIST = () => new Date(Date.now() + 5.5 * 3600e3).toISOString().slice(0, 10);
   const fmt = (d) => new Date(d + "T00:00:00").toLocaleDateString("en-IN", { day: "numeric", month: "short" });
@@ -41,7 +42,11 @@
     $("#chips").innerHTML = chips.map(([k, l]) =>
       `<button class="chip" data-f="${esc(k)}" aria-pressed="${k === filter}">${esc(l)}</button>`).join("");
 
-    const shown = data.jobs.filter((j) => {
+    const cities = data.cities || [];
+    $("#cities").innerHTML = cities.length ? [["all", "All cities"]].concat(cities.map((c) => [c, c])).map(([k, l]) =>
+      `<button class="chip city" data-c="${esc(k)}" aria-pressed="${k === city}">${esc(l)}</button>`).join("") : "";
+
+    const shown = data.jobs.filter((j) => city === "all" || j.city === city).filter((j) => {
       if (filter === "new") return j.added === batch;
       if (filter === "todo") return !applied[j.url];
       if (filter === "applied") return !!applied[j.url];
@@ -56,7 +61,8 @@
           <div class="meta">${esc(j.company)} · ${esc(j.location)} · posted ${fmt(j.posted)}</div>
           <div class="tags">
             ${j.added === batch ? '<span class="tag new">New</span>' : ""}
-            <span class="tag">${esc(j.category)}</span>
+            <span class="tag" data-cat="${esc(j.category)}">${esc(j.category)}</span>
+            ${j.city ? `<span class="tag place" data-city="${esc(j.city)}">${esc(j.city)}</span>` : ""}
             ${a ? `<span class="tag ok">Applied ${fmt(a.date)}</span>` : ""}
           </div>
         </div>
@@ -72,6 +78,7 @@
 
   document.addEventListener("click", (e) => {
     const chip = e.target.closest(".chip");
+    if (chip && chip.dataset.c) { city = chip.dataset.c; render(); return; }
     if (chip) { filter = chip.dataset.f; render(); return; }
     const btn = e.target.closest(".btn");
     if (btn) {

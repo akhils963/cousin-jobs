@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Anusha's Job Board</title>
+<link rel="stylesheet" href="../assets/board.css">
+</head>
+<body data-person="anusha">
+<div class="wrap">
+  <header>
+    <h1>Anusha's job board</h1>
+    <p>Tax, payroll and accounting roles in Bengaluru, picked for freshers.</p>
+    <p id="updated"></p>
+  </header>
+  <div class="stats">
+    <div class="stat hi"><b id="s-applied">0</b><span>Applied total</span></div>
+    <div class="stat"><b id="s-week">0</b><span>Applied this week</span></div>
+    <div class="stat"><b id="s-new">0</b><span>New today</span></div>
+    <div class="stat"><b id="s-open">0</b><span>Still to apply</span></div>
+  </div>
+  <div class="bar" id="chips"></div>
+  <div class="list" id="list"><p class="empty">Loading jobs…</p></div>
+  <h2>Applied log</h2>
+  <div class="log" id="log"></div>
+  <footer>
+    Your applied marks are saved on this phone or computer. Switching devices?
+    <button id="backup">Download a backup</button> and <button id="restore">restore it</button> on the other one.
+    <input type="file" id="file" accept="application/json" hidden>
+  </footer>
+</div>
+<script src="../assets/board.js"></script>
+</body>
+</html>

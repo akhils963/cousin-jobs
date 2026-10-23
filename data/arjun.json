@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T12:00:00+05:30",
+ "updated": "2026-10-23T11:45+05:30",
  "categories": [
   "RTL Design",
   "Design Verification",
@@ -8,6 +8,96 @@
   "Front-End Design"
  ],
  "jobs": [
+  {
+   "title": "SoC Design Engineer - RTL/Logic",
+   "company": "Intel",
+   "location": "Bengaluru",
+   "posted": "2026-10-22",
+   "url": "https://www.glassdoor.co.in/job-listing/soc-design-engineer-rtl-logic-intel-corporation-JV_IC2940587_KO0,29_KE30,47.htm?jl=1010303450152",
+   "category": "RTL Design",
+   "added": "2026-10-23",
+   "source": "Glassdoor"
+  },
+  {
+   "title": "ASIC Digital Design Engineer",
+   "company": "Synopsys",
+   "location": "Bengaluru",
+   "posted": "2026-10-22",
+   "url": "https://www.glassdoor.co.in/job-listing/asic-digital-design-engineer-synopsys-JV_IC2940587_KO0,28_KE29,37.htm?jl=1010302877809",
+   "category": "Front-End Design",
+   "added": "2026-10-23",
+   "source": "Glassdoor"
+  },
+  {
+   "title": "RTL Designer",
+   "company": "Velaura",
+   "location": "Bengaluru",
+   "posted": "2026-10-21",
+   "url": "https://www.glassdoor.co.in/job-listing/rtl-designer-bangalore-velaura-JV_IC2940587_KO0,22_KE23,30.htm?jl=1010301739399",
+   "category": "RTL Design",
+   "added": "2026-10-23",
+   "source": "Glassdoor"
+  },
+  {
+   "title": "Design Verification Engineer",
+   "company": "Velaura",
+   "location": "Bengaluru",
+   "posted": "2026-10-17",
+   "url": "https://www.glassdoor.co.in/job-listing/design-verification-engineer-bangalore-velaura-JV_IC2940587_KO0,38_KE39,46.htm?jl=1010298459435",
+   "category": "Design Verification",
+   "added": "2026-10-23",
+   "source": "Glassdoor"
+  },
+  {
+   "title": "ASIC Engineer Intern, Design Verification",
+   "company": "Meta",
+   "location": "Bengaluru",
+   "posted": "2026-10-14",
+   "url": "https://www.glassdoor.co.in/job-listing/asic-engineer-intern-design-verification-meta-JV_IC2940587_KO0,40_KE41,45.htm?jl=1010295884075",
+   "category": "Design Verification",
+   "added": "2026-10-23",
+   "source": "Glassdoor"
+  },
+  {
+   "title": "Design Verification Engineer, Silicon Engineering",
+   "company": "Google",
+   "location": "Bengaluru",
+   "posted": "2026-10-11",
+   "url": "https://www.glassdoor.co.in/job-listing/design-verification-engineer-silicon-engineering-google-JV_IC2940587_KO0,48_KE49,55.htm?jl=1010292522087",
+   "category": "Design Verification",
+   "added": "2026-10-23",
+   "source": "Glassdoor"
+  },
+  {
+   "title": "Video IP Design Verification Engineer",
+   "company": "Qualcomm",
+   "location": "Bengaluru",
+   "posted": "2026-10-09",
+   "url": "https://www.glassdoor.co.in/job-listing/video-ip-design-verification-engineer-qualcomm-JV_IC2940587_KO0,37_KE38,46.htm?jl=1010289975958",
+   "category": "Design Verification",
+   "added": "2026-10-23",
+   "source": "Glassdoor"
+  },
+  {
+   "title": "ASIC Engineer Intern, Design",
+   "company": "Meta",
+   "location": "Bengaluru",
+   "posted": "2026-10-07",
+   "url": "https://www.glassdoor.co.in/job-listing/asic-engineer-intern-design-meta-JV_IC2940587_KO0,27_KE28,32.htm?jl=1010287477548",
+   "category": "Front-End Design",
+   "added": "2026-10-23",
+   "source": "Glassdoor"
+  },
+  {
+   "title": "FPGA / RTL Design Engineer",
+   "company": "Yuktha Innovation Pvt Ltd",
+   "location": "Bengaluru",
+   "posted": "2026-09-28",
+   "url": "https://www.glassdoor.co.in/job-listing/fpga-rtl-design-engineer-yuktha-innovation-private-limited-JV_IC2940587_KO0,24_KE25,58.htm?jl=1010275683045",
+   "category": "RTL Design",
+   "added": "2026-10-23",
+   "source": "Glassdoor"
+  },
   {
    "title": "Digital Design Engineer (MTS levels)",
    "company": "Micron Technology",

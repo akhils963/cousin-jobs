@@ -29,3 +29,10 @@ Searches: "design verification engineer", "verification engineer SystemVerilog U
 3. Commit to main and push. GitHub Pages republishes within a minute or two.
 
 Never put phone numbers, emails or resume details in this repo; it is public.
+
+## If the Indeed connector is down
+
+Use web search to find Glassdoor India search pages for the same queries and cities, then
+fetch them one at a time (parallel fetches get rate limited). Only take listings whose direct
+`glassdoor.co.in/job-listing/...` URL is on the page, convert the "Nd ago" age into a posted
+date, and set `"source": "Glassdoor"`. Skip any listing whose URL or date you can't confirm.

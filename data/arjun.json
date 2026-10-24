@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T11:45+05:30",
+ "updated": "2026-10-24T11:37+05:30",
  "categories": [
   "RTL Design",
   "Design Verification",
@@ -8,6 +8,76 @@
   "Front-End Design"
  ],
  "jobs": [
+  {
+   "title": "Silicon Design Verification Engineer",
+   "company": "Intel Corporation",
+   "location": "Bengaluru, Karnataka",
+   "posted": "2026-10-23",
+   "url": "https://to.indeed.com/aagzpqmqs9vg",
+   "category": "Design Verification",
+   "added": "2026-10-24",
+   "source": "Indeed"
+  },
+  {
+   "title": "Design Verification Engineer",
+   "company": "Texas Instruments",
+   "location": "Bengaluru, Karnataka",
+   "posted": "2026-10-23",
+   "url": "https://to.indeed.com/aamz97nmmsb7",
+   "category": "Design Verification",
+   "added": "2026-10-24",
+   "source": "Indeed"
+  },
+  {
+   "title": "SOC Design Engineer – RTL/Logic",
+   "company": "Intel Corporation",
+   "location": "Bengaluru, Karnataka",
+   "posted": "2026-10-22",
+   "url": "https://to.indeed.com/aardh7pfkff7",
+   "category": "RTL Design",
+   "added": "2026-10-24",
+   "source": "Indeed"
+  },
+  {
+   "title": "ASIC Digital Design, Engineer",
+   "company": "Synopsys",
+   "location": "Bengaluru, Karnataka",
+   "posted": "2026-10-21",
+   "url": "https://to.indeed.com/aaltcdqcy9sy",
+   "category": "Front-End Design",
+   "added": "2026-10-24",
+   "source": "Indeed"
+  },
+  {
+   "title": "SoC Design Verification Engineer",
+   "company": "Intel Corporation",
+   "location": "Bengaluru, Karnataka",
+   "posted": "2026-10-12",
+   "url": "https://to.indeed.com/aal2xhwpn9jf",
+   "category": "Design Verification",
+   "added": "2026-10-24",
+   "source": "Indeed"
+  },
+  {
+   "title": "ASIC Engineer, Formal Verification",
+   "company": "Meta",
+   "location": "Bengaluru, Karnataka",
+   "posted": "2026-10-05",
+   "url": "https://to.indeed.com/aa2zq6xr4kgz",
+   "category": "Functional Verification",
+   "added": "2026-10-24",
+   "source": "Indeed"
+  },
+  {
+   "title": "ASIC Verification Engineer",
+   "company": "Hewlett Packard Enterprise | HPE",
+   "location": "Bengaluru, Karnataka",
+   "posted": "2026-09-25",
+   "url": "https://to.indeed.com/aaphhxcn2dc6",
+   "category": "Design Verification",
+   "added": "2026-10-24",
+   "source": "Indeed"
+  },
   {
    "title": "SoC Design Engineer - RTL/Logic",
    "company": "Intel",

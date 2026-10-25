@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T11:37+05:30",
+ "updated": "2026-10-25T11:37+05:30",
  "categories": [
   "RTL Design",
   "Design Verification",
@@ -8,6 +8,26 @@
   "Front-End Design"
  ],
  "jobs": [
+  {
+   "title": "FPGA / RTL Design Engineer",
+   "company": "Yuktha Innovation Private Limited",
+   "location": "Bangalore City, Bengaluru, Karnataka",
+   "posted": "2026-09-27",
+   "url": "https://to.indeed.com/aa2snpstdtfw",
+   "category": "RTL Design",
+   "added": "2026-10-25",
+   "source": "Indeed"
+  },
+  {
+   "title": "Digital Design Engineer",
+   "company": "Texas Instruments",
+   "location": "Bengaluru, Karnataka",
+   "posted": "2026-09-22",
+   "url": "https://to.indeed.com/aavglcvb4xgm",
+   "category": "Front-End Design",
+   "added": "2026-10-25",
+   "source": "Indeed"
+  },
   {
    "title": "Silicon Design Verification Engineer",
    "company": "Intel Corporation",

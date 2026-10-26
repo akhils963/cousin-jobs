@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T11:37+05:30",
+ "updated": "2026-10-26T11:40+05:30",
  "categories": [
   "RTL Design",
   "Design Verification",
@@ -8,6 +8,16 @@
   "Front-End Design"
  ],
  "jobs": [
+  {
+   "title": "[India] SOC RTL Integration Engineer",
+   "company": "EdgeCortix",
+   "location": "Bengaluru, Karnataka",
+   "posted": "2026-09-25",
+   "url": "https://to.indeed.com/aa8h9h6j7dpg",
+   "category": "SoC Integration",
+   "added": "2026-10-26",
+   "source": "Indeed"
+  },
   {
    "title": "FPGA / RTL Design Engineer",
    "company": "Yuktha Innovation Private Limited",

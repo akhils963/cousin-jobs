@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T11:40+05:30",
+ "updated": "2026-10-29T11:36+05:30",
  "categories": [
   "RTL Design",
   "Design Verification",
@@ -8,6 +8,16 @@
   "Front-End Design"
  ],
  "jobs": [
+  {
+   "title": "Verification Engineer",
+   "company": "Arm",
+   "location": "Bengaluru, Karnataka",
+   "posted": "2026-10-14",
+   "url": "https://to.indeed.com/aatftrzbltrf",
+   "category": "Design Verification",
+   "added": "2026-10-29",
+   "source": "Indeed"
+  },
   {
    "title": "Design Verification Engineer - PCIe",
    "company": "F.Robin Technologies Pvt Ltd",

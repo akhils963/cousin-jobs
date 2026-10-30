@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T11:36+05:30",
+ "updated": "2026-10-30T11:42+05:30",
  "categories": [
   "Accounting",
   "Tax",
@@ -12,6 +12,72 @@
   "Hyderabad"
  ],
  "jobs": [
+  {
+   "title": "Accountant",
+   "company": "ELITE OVERSEAS",
+   "location": "Mathikere, Bengaluru, Karnataka",
+   "posted": "2026-10-27",
+   "url": "https://to.indeed.com/aa2jnxqkwfg9",
+   "category": "Accounting",
+   "city": "Bengaluru",
+   "added": "2026-10-30",
+   "source": "Indeed"
+  },
+  {
+   "title": "Jr. Accounts Executive",
+   "company": "Sri Avantika Contractors (I) limited",
+   "location": "Hyderabad, Telangana",
+   "posted": "2026-10-23",
+   "url": "https://to.indeed.com/aawsxkw99pft",
+   "category": "Accounting",
+   "city": "Hyderabad",
+   "added": "2026-10-30",
+   "source": "Indeed"
+  },
+  {
+   "title": "Accountant, data entry",
+   "company": "Vikash Garment",
+   "location": "Hyderabad, Telangana",
+   "posted": "2026-10-22",
+   "url": "https://to.indeed.com/aapw6zth922j",
+   "category": "Accounting",
+   "city": "Hyderabad",
+   "added": "2026-10-30",
+   "source": "Indeed"
+  },
+  {
+   "title": "Accountant Executive",
+   "company": "Bazar Mela Pvt Ltd",
+   "location": "Whitefield, Bengaluru, Karnataka",
+   "posted": "2026-10-10",
+   "url": "https://to.indeed.com/aas9dcf9nmdd",
+   "category": "Accounting",
+   "city": "Bengaluru",
+   "added": "2026-10-30",
+   "source": "Indeed"
+  },
+  {
+   "title": "Tally Accountant",
+   "company": "Mana & Kias Infrastructures Limited",
+   "location": "Bangalore City, Bengaluru, Karnataka",
+   "posted": "2026-10-06",
+   "url": "https://to.indeed.com/aaqlzhkqdgwm",
+   "category": "Accounting",
+   "city": "Bengaluru",
+   "added": "2026-10-30",
+   "source": "Indeed"
+  },
+  {
+   "title": "Tax Associate - US Tax",
+   "company": "Vincent Tax Filing",
+   "location": "Kukatpally, Hyderabad, Telangana",
+   "posted": "2026-09-29",
+   "url": "https://to.indeed.com/aa9vj4nkp8n4",
+   "category": "Tax",
+   "city": "Hyderabad",
+   "added": "2026-10-30",
+   "source": "Indeed"
+  },
   {
    "title": "Junior Accountant",
    "company": "Awika Constructions",

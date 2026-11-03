@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T11:40+05:30",
+ "updated": "2026-11-03T11:36+05:30",
  "categories": [
   "RTL Design",
   "Design Verification",
@@ -8,6 +8,36 @@
   "Front-End Design"
  ],
  "jobs": [
+  {
+   "title": "ASIC Engineer",
+   "company": "Cisco",
+   "location": "Bengaluru",
+   "posted": "2026-10-29",
+   "url": "https://to.indeed.com/aam78khd8q7n",
+   "category": "Front-End Design",
+   "added": "2026-11-03",
+   "source": "Indeed"
+  },
+  {
+   "title": "RTL Designer - Bangalore",
+   "company": "Velaura",
+   "location": "Bengaluru",
+   "posted": "2026-10-20",
+   "url": "https://to.indeed.com/aak4rvm8qhxm",
+   "category": "RTL Design",
+   "added": "2026-11-03",
+   "source": "Indeed"
+  },
+  {
+   "title": "Design Verification Engineer - Bangalore",
+   "company": "Velaura",
+   "location": "Bengaluru",
+   "posted": "2026-10-16",
+   "url": "https://to.indeed.com/aa7p9dwkx7sr",
+   "category": "Design Verification",
+   "added": "2026-11-03",
+   "source": "Indeed"
+  },
   {
    "title": "RTL Engineer",
    "company": "Oceancore Technologies",

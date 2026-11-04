@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T11:36+05:30",
+ "updated": "2026-11-04T11:36+05:30",
  "categories": [
   "RTL Design",
   "Design Verification",
@@ -8,6 +8,16 @@
   "Front-End Design"
  ],
  "jobs": [
+  {
+   "title": "ASIC front-end verification engineer",
+   "company": "Hewlett Packard Enterprise | HPE",
+   "location": "Bengaluru",
+   "posted": "2026-06-18",
+   "url": "https://to.indeed.com/aamzmbh9qjtq",
+   "category": "Functional Verification",
+   "added": "2026-11-04",
+   "source": "Indeed"
+  },
   {
    "title": "ASIC Engineer",
    "company": "Cisco",

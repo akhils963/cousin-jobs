@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T11:36+05:30",
+ "updated": "2026-11-05T11:38+05:30",
  "categories": [
   "Accounting",
   "Tax",
@@ -12,6 +12,72 @@
   "Hyderabad"
  ],
  "jobs": [
+  {
+   "title": "Jr. Accountant",
+   "company": "Alacer Consulting Services",
+   "location": "Patancheru, Hyderabad",
+   "posted": "2026-10-31",
+   "url": "https://to.indeed.com/aa9fcrqzwvd8",
+   "category": "Accounting",
+   "city": "Hyderabad",
+   "added": "2026-11-05",
+   "source": "Indeed"
+  },
+  {
+   "title": "Accounts Executive (Accounts Receivable)",
+   "company": "Le Roma Hotels And Resorts",
+   "location": "Bengaluru",
+   "posted": "2026-10-31",
+   "url": "https://to.indeed.com/aa6tddg6ljvk",
+   "category": "AP / AR",
+   "city": "Bengaluru",
+   "added": "2026-11-05",
+   "source": "Indeed"
+  },
+  {
+   "title": "Associate Accountant",
+   "company": "HealthEdge Software, Inc.",
+   "location": "Hyderabad",
+   "posted": "2026-10-27",
+   "url": "https://to.indeed.com/aamqz9qm6p4x",
+   "category": "Accounting",
+   "city": "Hyderabad",
+   "added": "2026-11-05",
+   "source": "Indeed"
+  },
+  {
+   "title": "India Tax Associate I",
+   "company": "Eide Bailly",
+   "location": "Bengaluru",
+   "posted": "2026-09-09",
+   "url": "https://to.indeed.com/aaqwqmzvwwz8",
+   "category": "Tax",
+   "city": "Bengaluru",
+   "added": "2026-11-05",
+   "source": "Indeed"
+  },
+  {
+   "title": "Executive- Accounts Receivables",
+   "company": "EXL Service",
+   "location": "Bengaluru",
+   "posted": "2026-09-01",
+   "url": "https://to.indeed.com/aand9czvn89h",
+   "category": "AP / AR",
+   "city": "Bengaluru",
+   "added": "2026-11-05",
+   "source": "Indeed"
+  },
+  {
+   "title": "Payroll Associate",
+   "company": "Baker Tilly Canada",
+   "location": "Bengaluru",
+   "posted": "2026-08-21",
+   "url": "https://to.indeed.com/aant8p7k49s4",
+   "category": "Payroll",
+   "city": "Bengaluru",
+   "added": "2026-11-05",
+   "source": "Indeed"
+  },
   {
    "title": "Audit & Accounts Executive (Fresher) - B.Com with Tally",
    "company": "Alok & Anirudh",

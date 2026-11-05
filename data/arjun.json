@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T11:36+05:30",
+ "updated": "2026-11-05T11:38+05:30",
  "categories": [
   "RTL Design",
   "Design Verification",
@@ -8,6 +8,26 @@
   "Front-End Design"
  ],
  "jobs": [
+  {
+   "title": "IC Digital Design Engineer",
+   "company": "Aumovio",
+   "location": "Bengaluru",
+   "posted": "2026-07-27",
+   "url": "https://to.indeed.com/aaj2hhr9ch4d",
+   "category": "Front-End Design",
+   "added": "2026-11-05",
+   "source": "Indeed"
+  },
+  {
+   "title": "Digital Design Engineer",
+   "company": "onsemi",
+   "location": "Bengaluru",
+   "posted": "2026-07-20",
+   "url": "https://to.indeed.com/aa8phtzc6lbr",
+   "category": "Front-End Design",
+   "added": "2026-11-05",
+   "source": "Indeed"
+  },
   {
    "title": "ASIC front-end verification engineer",
    "company": "Hewlett Packard Enterprise | HPE",

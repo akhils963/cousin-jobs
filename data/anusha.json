@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T11:37+05:30",
+ "updated": "2026-11-07T11:36+05:30",
  "categories": [
   "Accounting",
   "Tax",
@@ -12,6 +12,105 @@
   "Hyderabad"
  ],
  "jobs": [
+  {
+   "title": "Accountant",
+   "company": "mythri",
+   "location": "Hyderabad",
+   "posted": "2026-11-04",
+   "url": "https://to.indeed.com/aafdxp9xy7n4",
+   "category": "Accounting",
+   "city": "Hyderabad",
+   "added": "2026-11-07",
+   "source": "Indeed"
+  },
+  {
+   "title": "Executive Accounts",
+   "company": "Emerson",
+   "location": "Bengaluru",
+   "posted": "2026-11-04",
+   "url": "https://to.indeed.com/aam2k7j977q7",
+   "category": "Accounting",
+   "city": "Bengaluru",
+   "added": "2026-11-07",
+   "source": "Indeed"
+  },
+  {
+   "title": "Audit Executive - CA Inter/ CA Final",
+   "company": "Analytix Corporate Solutions Pvt Ltd",
+   "location": "Kochi",
+   "posted": "2026-11-01",
+   "url": "https://to.indeed.com/aa6sw42vwmkb",
+   "category": "Accounting",
+   "city": "Kochi",
+   "added": "2026-11-07",
+   "source": "Indeed"
+  },
+  {
+   "title": "Finance Executive - Accounts Payable",
+   "company": "Marriott International",
+   "location": "Bengaluru",
+   "posted": "2026-10-31",
+   "url": "https://to.indeed.com/aa8rng4dzrlv",
+   "category": "AP / AR",
+   "city": "Bengaluru",
+   "added": "2026-11-07",
+   "source": "Indeed"
+  },
+  {
+   "title": "Accounts & HR Operations Executive - Fresher",
+   "company": "Transpire Technologies",
+   "location": "Hyderabad",
+   "posted": "2026-10-30",
+   "url": "https://to.indeed.com/aagftn244dwc",
+   "category": "Accounting",
+   "city": "Hyderabad",
+   "added": "2026-11-07",
+   "source": "Indeed"
+  },
+  {
+   "title": "Statutory & Taxation Executive",
+   "company": "Analytix Corporate Solutions Pvt Ltd",
+   "location": "Kochi",
+   "posted": "2026-10-15",
+   "url": "https://to.indeed.com/aarkwqxvf92p",
+   "category": "Tax",
+   "city": "Kochi",
+   "added": "2026-11-07",
+   "source": "Indeed"
+  },
+  {
+   "title": "GST Executive",
+   "company": "XcellHost Cloud Service Pvt.Ltd",
+   "location": "Aluva, Kochi",
+   "posted": "2026-10-15",
+   "url": "https://to.indeed.com/aayyd87d7tlz",
+   "category": "Tax",
+   "city": "Kochi",
+   "added": "2026-11-07",
+   "source": "Indeed"
+  },
+  {
+   "title": "Staffing Payroll executive - Hyderabad",
+   "company": "Prompt Personnel Private Limited",
+   "location": "Begumpet, Hyderabad",
+   "posted": "2026-09-16",
+   "url": "https://to.indeed.com/aabnhthrhjxw",
+   "category": "Payroll",
+   "city": "Hyderabad",
+   "added": "2026-11-07",
+   "source": "Indeed"
+  },
+  {
+   "title": "Jr. Accountant",
+   "company": "vibrant construction equipments",
+   "location": "Hyderabad",
+   "posted": "2026-07-22",
+   "url": "https://to.indeed.com/aaqv97hk8lrb",
+   "category": "Accounting",
+   "city": "Hyderabad",
+   "added": "2026-11-07",
+   "source": "Indeed"
+  },
   {
    "title": "Junior Accountant",
    "company": "I-ARCH DESIGNS",

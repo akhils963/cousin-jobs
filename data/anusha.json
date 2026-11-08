@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T11:36+05:30",
+ "updated": "2026-11-08T11:36+05:30",
  "categories": [
   "Accounting",
   "Tax",
@@ -12,6 +12,72 @@
   "Hyderabad"
  ],
  "jobs": [
+  {
+   "title": "US Tax Associate",
+   "company": "Creencia",
+   "location": "Hyderabad",
+   "posted": "2026-11-02",
+   "url": "https://to.indeed.com/aax2zk4znyz4",
+   "category": "Tax",
+   "city": "Hyderabad",
+   "added": "2026-11-08",
+   "source": "Indeed"
+  },
+  {
+   "title": "Accountant Intern",
+   "company": "Testunity",
+   "location": "HSR Layout, Bengaluru",
+   "posted": "2026-11-02",
+   "url": "https://to.indeed.com/aannxk8bzy8t",
+   "category": "Accounting",
+   "city": "Bengaluru",
+   "added": "2026-11-08",
+   "source": "Indeed"
+  },
+  {
+   "title": "fresher/ Senior Accounts Executive /Accountant",
+   "company": "Keerthi Groups",
+   "location": "Kadugodi, Bengaluru",
+   "posted": "2026-11-02",
+   "url": "https://to.indeed.com/aabfvh4rll6q",
+   "category": "Accounting",
+   "city": "Bengaluru",
+   "added": "2026-11-08",
+   "source": "Indeed"
+  },
+  {
+   "title": "US Tax Analyst",
+   "company": "INTAX FILING",
+   "location": "Hyderabad",
+   "posted": "2026-10-23",
+   "url": "https://to.indeed.com/aa6jmn7rt9zw",
+   "category": "Tax",
+   "city": "Hyderabad",
+   "added": "2026-11-08",
+   "source": "Indeed"
+  },
+  {
+   "title": "Associate Accounts Payable & Expense Specialist",
+   "company": "LaunchDarkly",
+   "location": "Bengaluru",
+   "posted": "2026-09-08",
+   "url": "https://to.indeed.com/aayfnnfjrghw",
+   "category": "AP / AR",
+   "city": "Bengaluru",
+   "added": "2026-11-08",
+   "source": "Indeed"
+  },
+  {
+   "title": "Procure to Pay Operations New Associate",
+   "company": "Accenture",
+   "location": "Bengaluru",
+   "posted": "2026-08-27",
+   "url": "https://to.indeed.com/aa7s7jdzh7xn",
+   "category": "AP / AR",
+   "city": "Bengaluru",
+   "added": "2026-11-08",
+   "source": "Indeed"
+  },
   {
    "title": "Accountant",
    "company": "mythri",

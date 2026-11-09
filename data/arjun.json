@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T11:36+05:30",
+ "updated": "2026-11-09T11:41+05:30",
  "categories": [
   "RTL Design",
   "Design Verification",
@@ -8,6 +8,16 @@
   "Front-End Design"
  ],
  "jobs": [
+  {
+   "title": "SOC Functional Validation Engineer",
+   "company": "Intel Corporation",
+   "location": "Bengaluru",
+   "posted": "2026-11-06",
+   "url": "https://to.indeed.com/aanshw4jcsgl",
+   "category": "Functional Verification",
+   "added": "2026-11-09",
+   "source": "Indeed"
+  },
   {
    "title": "IC Digital Design Engineer",
    "company": "Aumovio",

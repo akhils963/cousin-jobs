@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T11:41+05:30",
+ "updated": "2026-11-10T11:39+05:30",
  "categories": [
   "RTL Design",
   "Design Verification",
@@ -8,6 +8,16 @@
   "Front-End Design"
  ],
  "jobs": [
+  {
+   "title": "Design Verification Engineer",
+   "company": "Ambit Semiconductors Pvt Ltd",
+   "location": "Bengaluru",
+   "posted": "2026-03-02",
+   "url": "https://to.indeed.com/aa97yhdwjhk7",
+   "category": "Design Verification",
+   "added": "2026-11-10",
+   "source": "Indeed"
+  },
   {
    "title": "SOC Functional Validation Engineer",
    "company": "Intel Corporation",
